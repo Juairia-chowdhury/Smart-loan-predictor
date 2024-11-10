@@ -55,9 +55,6 @@ Missing Values: Identify missing data points in the dataset to decide on handlin
 Code Example (Python/Pandas):
 import pandas as pd
 
-# Load dataset
-data = pd.read_csv('loan_data.csv')
-
 # Descriptive statistics
 print(data.describe())
 
