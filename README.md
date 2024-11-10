@@ -61,11 +61,9 @@ print(data.describe())
 # Check for missing values
 print(data.isnull().sum())
 2. Data Cleaning
-Handling Missing Values: For columns with missing values, use imputation techniques (mean/median imputation for numerical columns, mode imputation for categorical ones) or remove rows with missing data.
+# Handling Missing Values: For columns with missing values, use imputation techniques (mean/median imputation for numerical columns, mode imputation for categorical ones) or remove rows with missing data.
 Outliers: Detect outliers using statistical methods (IQR, Z-score) and decide whether to treat them or remove them.
-Code Example (Python/Pandas):
 
-python
 # Handling missing values
 data.fillna(data.mean(), inplace=True)  # Impute missing numerical values with mean
 
