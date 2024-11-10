@@ -1,4 +1,4 @@
-#SmartLoan Predictor
+# SmartLoan Predictor
 ## Project Overview
 SmartLoan Predictor is leveraging historical loan application data, this system provides financial institutions with an automated, data-driven approach to streamline the loan approval process, reduce risks, and improve operational efficiency.
 
@@ -25,7 +25,7 @@ Run the data_preprocessing.py script to clean and preprocess the data:
 
 
 #2. Model Training
-Train the predictive model using the train_model.py script:
+Train the predictive model using the [[train_model.py](https://github.com/Juairia-chowdhury/Smart-loan-predictor/blob/main/FINAL_PROJECT(Loan_Predication).ipynb)] script:
 
 
 ## Dependencies
