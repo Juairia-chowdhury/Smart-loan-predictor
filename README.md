@@ -2,6 +2,14 @@
 ## Project Overview
 SmartLoan Predictor is leveraging historical loan application data, this system provides financial institutions with an automated, data-driven approach to streamline the loan approval process, reduce risks, and improve operational efficiency.
 
+
+# Dataset
+   Installation
+    Dependencies
+    Data Analysis and Visualization
+   Data Pre-Processing
+   Model Training
+   Model Evaluation
 ## Purpose
 The purpose of this project is to:
 
