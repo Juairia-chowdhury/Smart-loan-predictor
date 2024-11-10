@@ -45,89 +45,31 @@ This project requires the following Python libraries:
 # matplotlib
 # seaborn
 ## Data Analysis and Visualization for Loan Prediction
-Data analysis and visualization are crucial steps in understanding the dataset, uncovering patterns, and making informed decisions for model building. Below is an overview of the steps for data analysis and visualization in a loan prediction project:
+# Data Exploration:
 
-1. Data Exploration
-Objective: Understand the structure and quality of the data.
-Descriptive Statistics: Calculate summary statistics (mean, median, mode, standard deviation) for numerical columns to understand the distribution of values.
-Data Types: Check the data types of each column (numerical, categorical, etc.) to ensure proper preprocessing.
-Missing Values: Identify missing data points in the dataset to decide on handling strategies (e.g., imputation or removal).
-Code Example (Python/Pandas):
-import pandas as pd
+Summary statistics (mean, median, etc.) and data type checks.
+Identify missing values and data quality issues.
 
-# Descriptive statistics
-print(data.describe())
+#Data Cleaning:
 
-# Check for missing values
-print(data.isnull().sum())
-2. Data Cleaning
-# Handling Missing Values: For columns with missing values, use imputation techniques (mean/median imputation for numerical columns, mode imputation for categorical ones) or remove rows with missing data.
-Outliers: Detect outliers using statistical methods (IQR, Z-score) and decide whether to treat them or remove them.
+Impute missing values or remove rows.
+Handle outliers using IQR or Z-score methods.
+Visualization of Loan Approval Distribution:
 
-# Handling missing values
-data.fillna(data.mean(), inplace=True)
-# Impute missing numerical values with mean
+Bar chart to show loan approval vs. rejection.
 
-# Detecting outliers (using IQR method for numerical features)
-Q1 = data['loan_amount'].quantile(0.25)
+# Feature Distribution Visualization:
 
-Q3 = data['loan_amount'].quantile(0.75)
-IQR = Q3 - Q1
-outliers = data[(data['loan_amount'] < (Q1 - 1.5 * IQR)) | (data['loan_amount'] > (Q3 + 1.5 * IQR))]
+Heatmap to show relationships between numerical features.
+Categorical Data Visualization:
 
-print(outliers)
-3. Data Visualization
+# Count plots or pie charts to analyze categorical features (e.g., credit history, employment status).
+Insights:
 
-Visualizations help in understanding trends, correlations, and distributions in the data.
+Identify important features impacting loan approval.
+Uncover patterns in loan approvals, such as income or credit history influence.
 
-Visualizing Distribution of Loan Approval Outcome
 
-# Visualizing loan approval vs rejection
-
-data['loan_approved'].value_counts().plot(kind='bar', color=['green', 'red'])
-
-plt.title('Loan Approval Distribution')
-
-plt.xlabel('Loan Approval Status')
-
-plt.ylabel('Count')
-
-plt.show()
-
-Visualizing Numerical Feature Distributions
-
-Objective: Understand the distribution of numerical features such as loan amount, income, credit score, etc.
-Use histograms or box plots for better insight into data spread and skewness.
-Code Example (Python/Matplotlib):
-
-# Plotting histogram for loan amount
-
-data['loan_amount'].hist(bins=20, color='blue', edgecolor='black')
-
-plt.title('Loan Amount Distribution')
-
-plt.xlabel('Loan Amount')
-
-plt.ylabel('Frequency')
-
-plt.show()
-
-# Plotting boxplot for income distribution
-import seaborn as sns
-
-sns.boxplot(x='loan_approved', y='income', data=data)
-
-plt.title('Income Distribution by Loan Approval Status')
-
-plt.show()
-
-Correlation Matrix
-
-Objective: Identify correlations between numerical features.
-Use a heatmap to visualize correlations between features like income, credit score, loan amount, etc.
-
-Code Example (Python/Seaborn):
-import seaborn as sns
 
 
 
