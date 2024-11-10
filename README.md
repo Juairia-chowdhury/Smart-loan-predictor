@@ -4,12 +4,12 @@ SmartLoan Predictor is leveraging historical loan application data, this system 
 
 
 # Dataset
-   Installation
-    Dependencies
-    Data Analysis and Visualization
-   Data Pre-Processing
-   Model Training
-   Model Evaluation
+   Installation,
+    Dependencies,
+    Data Analysis and Visualization,
+   Data Pre-Processing,
+   Model Training,
+   Model Evaluation,
 ## Purpose
 The purpose of this project is to:
 
