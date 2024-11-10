@@ -50,24 +50,13 @@ This project requires the following Python libraries:
 Summary statistics (mean, median, etc.) and data type checks.
 Identify missing values and data quality issues.
 
-#Data Cleaning:
+# Data Cleaning:
 
 Impute missing values or remove rows.
 Handle outliers using IQR or Z-score methods.
 Visualization of Loan Approval Distribution:
 
-Bar chart to show loan approval vs. rejection.
 
-# Feature Distribution Visualization:
-
-Heatmap to show relationships between numerical features.
-Categorical Data Visualization:
-
-# Count plots or pie charts to analyze categorical features (e.g., credit history, employment status).
-Insights:
-
-Identify important features impacting loan approval.
-Uncover patterns in loan approvals, such as income or credit history influence.
 
 
 
